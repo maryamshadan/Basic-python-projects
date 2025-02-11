@@ -1,0 +1,13 @@
+room_rent=int(input("enter the rent of the room = "))
+room_service=int(input("enter the charge for room service = "))
+food_ordered=int(input("enter the amount of the ordered food = "))
+laundry_charges=int(input("enter the laundry charges = "))
+electricty_units=int(input("enter the units of electricty used = "))
+charge_per_unit=int(input("enter the charge per unit = "))
+persons=int(input("enter the number of persons sharing the room = "))
+
+total_electricty = (electricty_units * charge_per_unit)
+print("total electricty used = ",total_electricty)
+total_rent = (total_electricty + room_rent + room_service + food_ordered + laundry_charges)
+print("total rent = ",total_rent)
+print("the rent payable by each person = ",total_rent/persons)
